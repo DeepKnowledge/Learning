@@ -6,7 +6,7 @@ from django.contrib import admin
 
 admin.site.register(Article)
 admin.site.register(Comment)
-admin.site.register(User)
+#admin.site.register(User)
 
 urlpatterns = patterns('learn_app.views',
     url(r'^$','index'),

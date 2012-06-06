@@ -1,0 +1,23 @@
+{% extends "header.html" %}
+{% block main %}
+<style type="text/css">
+    ul
+    {
+        text-align:left;
+        width:10;
+        height:100;
+        color:red;
+    }
+</style>
+
+<h2>Articles</h2>
+<ul>
+    {% for article in article_list %}
+    <li>{{ article.title }}<br />{{ article.body }}<br /><br /></li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
+
+
+
